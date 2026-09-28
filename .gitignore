@@ -1,0 +1,25 @@
+# Môi trường và bộ nhớ đệm
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Dữ liệu tải về (MNIST, MNIST-M)
+data/
+
+# Bí mật
+.env
+.env.*
+kaggle.json
+*.key
+*.pem
+.streamlit/secrets.toml
+
+# Hệ điều hành
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Thí nghiệm phụ: chỉ commit .json kết quả
+runs/**/*.pt

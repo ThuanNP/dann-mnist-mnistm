@@ -1,0 +1,197 @@
+[target] step 200/9360 loss_y=2.2963 loss_d=0.0000 lr=0.00865 (18s)
+[target] step 400/9360 loss_y=2.1605 loss_d=0.0000 lr=0.00766 (21s)
+[target] step 600/9360 loss_y=0.6515 loss_d=0.0000 lr=0.00690 (46s)
+[target] step 800/9360 loss_y=0.3663 loss_d=0.0000 lr=0.00629 (49s)
+[target] step 1000/9360 loss_y=0.2564 loss_d=0.0000 lr=0.00580 (75s)
+[target] step 1200/9360 loss_y=0.2757 loss_d=0.0000 lr=0.00539 (78s)
+[target] step 1400/9360 loss_y=0.1441 loss_d=0.0000 lr=0.00504 (81s)
+[target] step 1600/9360 loss_y=0.1376 loss_d=0.0000 lr=0.00474 (106s)
+[target] step 1800/9360 loss_y=0.1983 loss_d=0.0000 lr=0.00447 (109s)
+[target] step 2000/9360 loss_y=0.2574 loss_d=0.0000 lr=0.00424 (134s)
+[target] step 2200/9360 loss_y=0.2147 loss_d=0.0000 lr=0.00404 (137s)
+[target] step 2400/9360 loss_y=0.1466 loss_d=0.0000 lr=0.00386 (160s)
+[target] step 2600/9360 loss_y=0.1403 loss_d=0.0000 lr=0.00369 (163s)
+[target] step 2800/9360 loss_y=0.1236 loss_d=0.0000 lr=0.00354 (166s)
+[target] step 3000/9360 loss_y=0.0846 loss_d=0.0000 lr=0.00341 (191s)
+[target] step 3200/9360 loss_y=0.0957 loss_d=0.0000 lr=0.00328 (194s)
+[target] step 3400/9360 loss_y=0.0645 loss_d=0.0000 lr=0.00317 (220s)
+[target] step 3600/9360 loss_y=0.0785 loss_d=0.0000 lr=0.00306 (223s)
+[target] step 3800/9360 loss_y=0.1030 loss_d=0.0000 lr=0.00296 (248s)
+[target] step 4000/9360 loss_y=0.1354 loss_d=0.0000 lr=0.00287 (251s)
+[target] step 4200/9360 loss_y=0.0740 loss_d=0.0000 lr=0.00279 (255s)
+[target] step 4400/9360 loss_y=0.1059 loss_d=0.0000 lr=0.00271 (281s)
+[target] step 4600/9360 loss_y=0.1501 loss_d=0.0000 lr=0.00264 (284s)
+[target] step 4800/9360 loss_y=0.1609 loss_d=0.0000 lr=0.00257 (309s)
+[target] step 5000/9360 loss_y=0.1050 loss_d=0.0000 lr=0.00250 (312s)
+[target] step 5200/9360 loss_y=0.0518 loss_d=0.0000 lr=0.00244 (337s)
+[target] step 5400/9360 loss_y=0.0322 loss_d=0.0000 lr=0.00238 (340s)
+[target] step 5600/9360 loss_y=0.0748 loss_d=0.0000 lr=0.00233 (343s)
+[target] step 5800/9360 loss_y=0.0674 loss_d=0.0000 lr=0.00228 (368s)
+[target] step 6000/9360 loss_y=0.0763 loss_d=0.0000 lr=0.00223 (371s)
+[target] step 6200/9360 loss_y=0.0681 loss_d=0.0000 lr=0.00218 (395s)
+[target] step 6400/9360 loss_y=0.0967 loss_d=0.0000 lr=0.00214 (398s)
+[target] step 6600/9360 loss_y=0.0422 loss_d=0.0000 lr=0.00209 (423s)
+[target] step 6800/9360 loss_y=0.0643 loss_d=0.0000 lr=0.00205 (426s)
+[target] step 7000/9360 loss_y=0.1131 loss_d=0.0000 lr=0.00201 (429s)
+[target] step 7200/9360 loss_y=0.1124 loss_d=0.0000 lr=0.00198 (453s)
+[target] step 7400/9360 loss_y=0.0163 loss_d=0.0000 lr=0.00194 (456s)
+[target] step 7600/9360 loss_y=0.0811 loss_d=0.0000 lr=0.00191 (484s)
+[target] step 7800/9360 loss_y=0.0482 loss_d=0.0000 lr=0.00187 (487s)
+[target] step 8000/9360 loss_y=0.0545 loss_d=0.0000 lr=0.00184 (514s)
+[target] step 8200/9360 loss_y=0.0172 loss_d=0.0000 lr=0.00181 (516s)
+[target] step 8400/9360 loss_y=0.0388 loss_d=0.0000 lr=0.00178 (519s)
+[target] step 8600/9360 loss_y=0.0391 loss_d=0.0000 lr=0.00175 (542s)
+[target] step 8800/9360 loss_y=0.0186 loss_d=0.0000 lr=0.00173 (544s)
+[target] step 9000/9360 loss_y=0.0763 loss_d=0.0000 lr=0.00170 (568s)
+[target] step 9200/9360 loss_y=0.0495 loss_d=0.0000 lr=0.00168 (571s)
+[target] step 9360/9360 loss_y=0.0543 loss_d=0.0000 lr=0.00166 (573s)
+{
+  "method": "target",
+  "source": "mnist",
+  "target": "mnist_m_gen",
+  "seed": 42,
+  "epochs": 20,
+  "steps": 9360,
+  "norm": "mean",
+  "norm_mean": [
+    0.283118,
+    0.284857,
+    0.257212
+  ],
+  "clip_grad": null,
+  "source_test_acc": 0.9867,
+  "target_test_acc": 0.9736,
+  "train_seconds": 483.3,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "b9123a4"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "step": 468,
+      "source_test_acc": 0.5062,
+      "target_test_acc": 0.4716
+    },
+    {
+      "epoch": 2,
+      "step": 936,
+      "source_test_acc": 0.954,
+      "target_test_acc": 0.9126
+    },
+    {
+      "epoch": 3,
+      "step": 1404,
+      "source_test_acc": 0.9663,
+      "target_test_acc": 0.9413
+    },
+    {
+      "epoch": 4,
+      "step": 1872,
+      "source_test_acc": 0.9725,
+      "target_test_acc": 0.9499
+    },
+    {
+      "epoch": 5,
+      "step": 2340,
+      "source_test_acc": 0.9777,
+      "target_test_acc": 0.9545
+    },
+    {
+      "epoch": 6,
+      "step": 2808,
+      "source_test_acc": 0.9779,
+      "target_test_acc": 0.9583
+    },
+    {
+      "epoch": 7,
+      "step": 3276,
+      "source_test_acc": 0.981,
+      "target_test_acc": 0.961
+    },
+    {
+      "epoch": 8,
+      "step": 3744,
+      "source_test_acc": 0.9813,
+      "target_test_acc": 0.9631
+    },
+    {
+      "epoch": 9,
+      "step": 4212,
+      "source_test_acc": 0.9837,
+      "target_test_acc": 0.9665
+    },
+    {
+      "epoch": 10,
+      "step": 4680,
+      "source_test_acc": 0.9826,
+      "target_test_acc": 0.9652
+    },
+    {
+      "epoch": 11,
+      "step": 5148,
+      "source_test_acc": 0.985,
+      "target_test_acc": 0.9663
+    },
+    {
+      "epoch": 12,
+      "step": 5616,
+      "source_test_acc": 0.9843,
+      "target_test_acc": 0.9674
+    },
+    {
+      "epoch": 13,
+      "step": 6084,
+      "source_test_acc": 0.9853,
+      "target_test_acc": 0.9695
+    },
+    {
+      "epoch": 14,
+      "step": 6552,
+      "source_test_acc": 0.9849,
+      "target_test_acc": 0.9705
+    },
+    {
+      "epoch": 15,
+      "step": 7020,
+      "source_test_acc": 0.986,
+      "target_test_acc": 0.9698
+    },
+    {
+      "epoch": 16,
+      "step": 7488,
+      "source_test_acc": 0.9872,
+      "target_test_acc": 0.9719
+    },
+    {
+      "epoch": 17,
+      "step": 7956,
+      "source_test_acc": 0.986,
+      "target_test_acc": 0.9724
+    },
+    {
+      "epoch": 18,
+      "step": 8424,
+      "source_test_acc": 0.9865,
+      "target_test_acc": 0.9724
+    },
+    {
+      "epoch": 19,
+      "step": 8892,
+      "source_test_acc": 0.9874,
+      "target_test_acc": 0.9726
+    },
+    {
+      "epoch": 20,
+      "step": 9360,
+      "source_test_acc": 0.9867,
+      "target_test_acc": 0.9736
+    }
+  ],
+  "selected": null
+}

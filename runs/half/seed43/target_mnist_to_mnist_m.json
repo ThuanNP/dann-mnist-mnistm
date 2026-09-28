@@ -1,0 +1,27 @@
+{
+  "method": "target",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 43,
+  "epochs": 20,
+  "steps": 9200,
+  "norm": "half",
+  "norm_mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "clip_grad": null,
+  "source_test_acc": 0.9721,
+  "target_test_acc": 0.9541162093100767,
+  "train_seconds": 443.3,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "9a47c8b"
+  }
+}

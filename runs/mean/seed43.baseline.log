@@ -1,0 +1,74 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[baseline] step 200/9360 loss_y=0.2452 loss_d=0.0000 lr=0.00865 (13s)
+[baseline] step 400/9360 loss_y=0.1170 loss_d=0.0000 lr=0.00766 (15s)
+[baseline] step 600/9360 loss_y=0.0998 loss_d=0.0000 lr=0.00690 (30s)
+[baseline] step 800/9360 loss_y=0.1513 loss_d=0.0000 lr=0.00629 (32s)
+[baseline] step 1000/9360 loss_y=0.0917 loss_d=0.0000 lr=0.00580 (45s)
+[baseline] step 1200/9360 loss_y=0.0818 loss_d=0.0000 lr=0.00539 (48s)
+[baseline] step 1400/9360 loss_y=0.0417 loss_d=0.0000 lr=0.00504 (51s)
+[baseline] step 1600/9360 loss_y=0.0544 loss_d=0.0000 lr=0.00474 (65s)
+[baseline] step 1800/9360 loss_y=0.0244 loss_d=0.0000 lr=0.00447 (67s)
+[baseline] step 2000/9360 loss_y=0.0633 loss_d=0.0000 lr=0.00424 (81s)
+[baseline] step 2200/9360 loss_y=0.0410 loss_d=0.0000 lr=0.00404 (83s)
+[baseline] step 2400/9360 loss_y=0.0500 loss_d=0.0000 lr=0.00386 (97s)
+[baseline] step 2600/9360 loss_y=0.0257 loss_d=0.0000 lr=0.00369 (100s)
+[baseline] step 2800/9360 loss_y=0.0418 loss_d=0.0000 lr=0.00354 (102s)
+[baseline] step 3000/9360 loss_y=0.0589 loss_d=0.0000 lr=0.00341 (115s)
+[baseline] step 3200/9360 loss_y=0.0958 loss_d=0.0000 lr=0.00328 (117s)
+[baseline] step 3400/9360 loss_y=0.0390 loss_d=0.0000 lr=0.00317 (129s)
+[baseline] step 3600/9360 loss_y=0.0276 loss_d=0.0000 lr=0.00306 (131s)
+[baseline] step 3800/9360 loss_y=0.0235 loss_d=0.0000 lr=0.00296 (144s)
+[baseline] step 4000/9360 loss_y=0.0125 loss_d=0.0000 lr=0.00287 (146s)
+[baseline] step 4200/9360 loss_y=0.0402 loss_d=0.0000 lr=0.00279 (148s)
+[baseline] step 4400/9360 loss_y=0.0331 loss_d=0.0000 lr=0.00271 (160s)
+[baseline] step 4600/9360 loss_y=0.0073 loss_d=0.0000 lr=0.00264 (162s)
+[baseline] step 4800/9360 loss_y=0.0060 loss_d=0.0000 lr=0.00257 (176s)
+[baseline] step 5000/9360 loss_y=0.0095 loss_d=0.0000 lr=0.00250 (179s)
+[baseline] step 5200/9360 loss_y=0.0211 loss_d=0.0000 lr=0.00244 (194s)
+[baseline] step 5400/9360 loss_y=0.0321 loss_d=0.0000 lr=0.00238 (196s)
+[baseline] step 5600/9360 loss_y=0.0075 loss_d=0.0000 lr=0.00233 (198s)
+[baseline] step 5800/9360 loss_y=0.0040 loss_d=0.0000 lr=0.00228 (213s)
+[baseline] step 6000/9360 loss_y=0.0058 loss_d=0.0000 lr=0.00223 (215s)
+[baseline] step 6200/9360 loss_y=0.0181 loss_d=0.0000 lr=0.00218 (227s)
+[baseline] step 6400/9360 loss_y=0.0483 loss_d=0.0000 lr=0.00214 (229s)
+[baseline] step 6600/9360 loss_y=0.0012 loss_d=0.0000 lr=0.00209 (242s)
+[baseline] step 6800/9360 loss_y=0.0091 loss_d=0.0000 lr=0.00205 (244s)
+[baseline] step 7000/9360 loss_y=0.0296 loss_d=0.0000 lr=0.00201 (246s)
+[baseline] step 7200/9360 loss_y=0.0057 loss_d=0.0000 lr=0.00198 (259s)
+[baseline] step 7400/9360 loss_y=0.0059 loss_d=0.0000 lr=0.00194 (261s)
+[baseline] step 7600/9360 loss_y=0.0158 loss_d=0.0000 lr=0.00191 (273s)
+[baseline] step 7800/9360 loss_y=0.0067 loss_d=0.0000 lr=0.00187 (275s)
+[baseline] step 8000/9360 loss_y=0.0044 loss_d=0.0000 lr=0.00184 (288s)
+[baseline] step 8200/9360 loss_y=0.0398 loss_d=0.0000 lr=0.00181 (290s)
+[baseline] step 8400/9360 loss_y=0.0123 loss_d=0.0000 lr=0.00178 (292s)
+[baseline] step 8600/9360 loss_y=0.0073 loss_d=0.0000 lr=0.00175 (304s)
+[baseline] step 8800/9360 loss_y=0.0051 loss_d=0.0000 lr=0.00173 (306s)
+[baseline] step 9000/9360 loss_y=0.0085 loss_d=0.0000 lr=0.00170 (319s)
+[baseline] step 9200/9360 loss_y=0.0144 loss_d=0.0000 lr=0.00168 (321s)
+[baseline] step 9360/9360 loss_y=0.0129 loss_d=0.0000 lr=0.00166 (322s)
+{
+  "method": "baseline",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 43,
+  "epochs": 20,
+  "steps": 9360,
+  "norm": "mean",
+  "norm_mean": [
+    0.293035,
+    0.295113,
+    0.268403
+  ],
+  "source_test_acc": 0.9909,
+  "target_test_acc": 0.524275080546606,
+  "train_seconds": 323.2,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "0c39ee8"
+  }
+}

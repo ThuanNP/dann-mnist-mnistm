@@ -1,0 +1,74 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[target] step 200/9200 loss_y=2.2897 loss_d=0.0000 lr=0.00863 (18s)
+[target] step 400/9200 loss_y=1.9085 loss_d=0.0000 lr=0.00763 (22s)
+[target] step 600/9200 loss_y=0.6375 loss_d=0.0000 lr=0.00687 (41s)
+[target] step 800/9200 loss_y=0.5236 loss_d=0.0000 lr=0.00626 (46s)
+[target] step 1000/9200 loss_y=0.2579 loss_d=0.0000 lr=0.00576 (65s)
+[target] step 1200/9200 loss_y=0.2773 loss_d=0.0000 lr=0.00535 (69s)
+[target] step 1400/9200 loss_y=0.2126 loss_d=0.0000 lr=0.00500 (86s)
+[target] step 1600/9200 loss_y=0.1765 loss_d=0.0000 lr=0.00470 (89s)
+[target] step 1800/9200 loss_y=0.2181 loss_d=0.0000 lr=0.00444 (92s)
+[target] step 2000/9200 loss_y=0.1940 loss_d=0.0000 lr=0.00421 (109s)
+[target] step 2200/9200 loss_y=0.1795 loss_d=0.0000 lr=0.00400 (112s)
+[target] step 2400/9200 loss_y=0.1981 loss_d=0.0000 lr=0.00382 (130s)
+[target] step 2600/9200 loss_y=0.1716 loss_d=0.0000 lr=0.00366 (133s)
+[target] step 2800/9200 loss_y=0.1228 loss_d=0.0000 lr=0.00351 (151s)
+[target] step 3000/9200 loss_y=0.1387 loss_d=0.0000 lr=0.00337 (154s)
+[target] step 3200/9200 loss_y=0.1383 loss_d=0.0000 lr=0.00325 (158s)
+[target] step 3400/9200 loss_y=0.0998 loss_d=0.0000 lr=0.00314 (176s)
+[target] step 3600/9200 loss_y=0.1757 loss_d=0.0000 lr=0.00303 (180s)
+[target] step 3800/9200 loss_y=0.2410 loss_d=0.0000 lr=0.00293 (200s)
+[target] step 4000/9200 loss_y=0.1895 loss_d=0.0000 lr=0.00284 (204s)
+[target] step 4200/9200 loss_y=0.1111 loss_d=0.0000 lr=0.00276 (224s)
+[target] step 4400/9200 loss_y=0.1066 loss_d=0.0000 lr=0.00268 (228s)
+[target] step 4600/9200 loss_y=0.0846 loss_d=0.0000 lr=0.00261 (233s)
+[target] step 4800/9200 loss_y=0.1241 loss_d=0.0000 lr=0.00254 (252s)
+[target] step 5000/9200 loss_y=0.0695 loss_d=0.0000 lr=0.00248 (256s)
+[target] step 5200/9200 loss_y=0.1042 loss_d=0.0000 lr=0.00241 (272s)
+[target] step 5400/9200 loss_y=0.1299 loss_d=0.0000 lr=0.00236 (275s)
+[target] step 5600/9200 loss_y=0.2035 loss_d=0.0000 lr=0.00230 (291s)
+[target] step 5800/9200 loss_y=0.1117 loss_d=0.0000 lr=0.00225 (294s)
+[target] step 6000/9200 loss_y=0.0799 loss_d=0.0000 lr=0.00220 (310s)
+[target] step 6200/9200 loss_y=0.1668 loss_d=0.0000 lr=0.00216 (313s)
+[target] step 6400/9200 loss_y=0.1398 loss_d=0.0000 lr=0.00211 (316s)
+[target] step 6600/9200 loss_y=0.1130 loss_d=0.0000 lr=0.00207 (332s)
+[target] step 6800/9200 loss_y=0.1759 loss_d=0.0000 lr=0.00203 (335s)
+[target] step 7000/9200 loss_y=0.0917 loss_d=0.0000 lr=0.00199 (351s)
+[target] step 7200/9200 loss_y=0.1118 loss_d=0.0000 lr=0.00195 (354s)
+[target] step 7400/9200 loss_y=0.1033 loss_d=0.0000 lr=0.00192 (370s)
+[target] step 7600/9200 loss_y=0.1390 loss_d=0.0000 lr=0.00188 (373s)
+[target] step 7800/9200 loss_y=0.0776 loss_d=0.0000 lr=0.00185 (376s)
+[target] step 8000/9200 loss_y=0.0992 loss_d=0.0000 lr=0.00182 (392s)
+[target] step 8200/9200 loss_y=0.1909 loss_d=0.0000 lr=0.00179 (395s)
+[target] step 8400/9200 loss_y=0.1268 loss_d=0.0000 lr=0.00176 (412s)
+[target] step 8600/9200 loss_y=0.1023 loss_d=0.0000 lr=0.00173 (415s)
+[target] step 8800/9200 loss_y=0.0444 loss_d=0.0000 lr=0.00171 (433s)
+[target] step 9000/9200 loss_y=0.0771 loss_d=0.0000 lr=0.00168 (438s)
+[target] step 9200/9200 loss_y=0.0818 loss_d=0.0000 lr=0.00166 (442s)
+{
+  "method": "target",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 43,
+  "epochs": 20,
+  "steps": 9200,
+  "norm": "half",
+  "norm_mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "clip_grad": null,
+  "source_test_acc": 0.9721,
+  "target_test_acc": 0.9541162093100767,
+  "train_seconds": 443.3,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "9a47c8b"
+  }
+}

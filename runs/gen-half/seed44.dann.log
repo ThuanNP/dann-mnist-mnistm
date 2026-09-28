@@ -1,0 +1,270 @@
+[dann] step 200/18740 loss_y=0.3270 loss_d=0.2561 lr=0.00927 (13s)
+[dann] step 400/18740 loss_y=0.0538 loss_d=0.1855 lr=0.00865 (16s)
+[dann] step 600/18740 loss_y=0.3097 loss_d=0.2575 lr=0.00812 (18s)
+[dann] step 800/18740 loss_y=0.1910 loss_d=0.2014 lr=0.00766 (21s)
+[dann] step 1000/18740 loss_y=0.0243 loss_d=0.1226 lr=0.00726 (48s)
+[dann] step 1200/18740 loss_y=0.0341 loss_d=0.1580 lr=0.00690 (50s)
+[dann] step 1400/18740 loss_y=0.0259 loss_d=0.2481 lr=0.00658 (53s)
+[dann] step 1600/18740 loss_y=0.0097 loss_d=0.1862 lr=0.00630 (56s)
+[dann] step 1800/18740 loss_y=0.0304 loss_d=0.2092 lr=0.00604 (58s)
+[dann] step 2000/18740 loss_y=0.0130 loss_d=0.1373 lr=0.00580 (83s)
+[dann] step 2200/18740 loss_y=0.0551 loss_d=0.2362 lr=0.00559 (86s)
+[dann] step 2400/18740 loss_y=0.0531 loss_d=0.2212 lr=0.00539 (88s)
+[dann] step 2600/18740 loss_y=0.1581 loss_d=0.3492 lr=0.00521 (90s)
+[dann] step 2800/18740 loss_y=0.1614 loss_d=0.3045 lr=0.00504 (92s)
+[dann] step 3000/18740 loss_y=0.2381 loss_d=0.5913 lr=0.00488 (116s)
+[dann] step 3200/18740 loss_y=0.0330 loss_d=0.4262 lr=0.00474 (118s)
+[dann] step 3400/18740 loss_y=0.0520 loss_d=0.4240 lr=0.00460 (121s)
+[dann] step 3600/18740 loss_y=0.0667 loss_d=0.2835 lr=0.00448 (123s)
+[dann] step 3800/18740 loss_y=0.0778 loss_d=0.3993 lr=0.00436 (151s)
+[dann] step 4000/18740 loss_y=0.0628 loss_d=0.3924 lr=0.00425 (154s)
+[dann] step 4200/18740 loss_y=0.0671 loss_d=0.6744 lr=0.00414 (156s)
+[dann] step 4400/18740 loss_y=0.0170 loss_d=0.5291 lr=0.00404 (158s)
+[dann] step 4600/18740 loss_y=0.0412 loss_d=0.5261 lr=0.00395 (161s)
+[dann] step 4800/18740 loss_y=0.0725 loss_d=0.5226 lr=0.00386 (185s)
+[dann] step 5000/18740 loss_y=0.0370 loss_d=0.6821 lr=0.00377 (187s)
+[dann] step 5200/18740 loss_y=0.1217 loss_d=0.3719 lr=0.00369 (189s)
+[dann] step 5400/18740 loss_y=0.1586 loss_d=0.5720 lr=0.00362 (191s)
+[dann] step 5600/18740 loss_y=0.0234 loss_d=0.7691 lr=0.00354 (193s)
+[dann] step 5800/18740 loss_y=0.0878 loss_d=0.3610 lr=0.00347 (216s)
+[dann] step 6000/18740 loss_y=0.0561 loss_d=0.4870 lr=0.00341 (218s)
+[dann] step 6200/18740 loss_y=0.1665 loss_d=0.5582 lr=0.00334 (220s)
+[dann] step 6400/18740 loss_y=0.0453 loss_d=0.6433 lr=0.00328 (222s)
+[dann] step 6600/18740 loss_y=0.1608 loss_d=0.6629 lr=0.00323 (247s)
+[dann] step 6800/18740 loss_y=0.0868 loss_d=0.5803 lr=0.00317 (249s)
+[dann] step 7000/18740 loss_y=0.1864 loss_d=0.7095 lr=0.00312 (251s)
+[dann] step 7200/18740 loss_y=0.0084 loss_d=0.7853 lr=0.00306 (253s)
+[dann] step 7400/18740 loss_y=0.0099 loss_d=0.6369 lr=0.00301 (255s)
+[dann] step 7600/18740 loss_y=0.0319 loss_d=0.5119 lr=0.00297 (282s)
+[dann] step 7800/18740 loss_y=0.1575 loss_d=0.5524 lr=0.00292 (284s)
+[dann] step 8000/18740 loss_y=0.0865 loss_d=0.6822 lr=0.00288 (286s)
+[dann] step 8200/18740 loss_y=0.0855 loss_d=0.8887 lr=0.00283 (289s)
+[dann] step 8400/18740 loss_y=0.0451 loss_d=0.5950 lr=0.00279 (291s)
+[dann] step 8600/18740 loss_y=0.0060 loss_d=0.6492 lr=0.00275 (318s)
+[dann] step 8800/18740 loss_y=0.1954 loss_d=0.6445 lr=0.00271 (320s)
+[dann] step 9000/18740 loss_y=0.0478 loss_d=0.6153 lr=0.00267 (322s)
+[dann] step 9200/18740 loss_y=0.1393 loss_d=0.6409 lr=0.00264 (324s)
+[dann] step 9400/18740 loss_y=0.0245 loss_d=0.6207 lr=0.00260 (350s)
+[dann] step 9600/18740 loss_y=0.1458 loss_d=0.6638 lr=0.00257 (353s)
+[dann] step 9800/18740 loss_y=0.0794 loss_d=0.5963 lr=0.00254 (355s)
+[dann] step 10000/18740 loss_y=0.0491 loss_d=0.5809 lr=0.00250 (357s)
+[dann] step 10200/18740 loss_y=0.0213 loss_d=0.5555 lr=0.00247 (360s)
+[dann] step 10400/18740 loss_y=0.0140 loss_d=0.6506 lr=0.00244 (386s)
+[dann] step 10600/18740 loss_y=0.0028 loss_d=0.6634 lr=0.00241 (389s)
+[dann] step 10800/18740 loss_y=0.0643 loss_d=0.6940 lr=0.00238 (391s)
+[dann] step 11000/18740 loss_y=0.1811 loss_d=0.6228 lr=0.00236 (394s)
+[dann] step 11200/18740 loss_y=0.0461 loss_d=0.6412 lr=0.00233 (397s)
+[dann] step 11400/18740 loss_y=0.0181 loss_d=0.6540 lr=0.00230 (425s)
+[dann] step 11600/18740 loss_y=0.0408 loss_d=0.5987 lr=0.00228 (427s)
+[dann] step 11800/18740 loss_y=0.0251 loss_d=0.6050 lr=0.00225 (430s)
+[dann] step 12000/18740 loss_y=0.0485 loss_d=0.6209 lr=0.00223 (432s)
+[dann] step 12200/18740 loss_y=0.0139 loss_d=0.6221 lr=0.00220 (458s)
+[dann] step 12400/18740 loss_y=0.0600 loss_d=0.6529 lr=0.00218 (460s)
+[dann] step 12600/18740 loss_y=0.0130 loss_d=0.5459 lr=0.00216 (463s)
+[dann] step 12800/18740 loss_y=0.0533 loss_d=0.5903 lr=0.00214 (465s)
+[dann] step 13000/18740 loss_y=0.0644 loss_d=0.5551 lr=0.00211 (467s)
+[dann] step 13200/18740 loss_y=0.0145 loss_d=0.6662 lr=0.00209 (493s)
+[dann] step 13400/18740 loss_y=0.0125 loss_d=0.5977 lr=0.00207 (496s)
+[dann] step 13600/18740 loss_y=0.1096 loss_d=0.6308 lr=0.00205 (498s)
+[dann] step 13800/18740 loss_y=0.0017 loss_d=0.6399 lr=0.00203 (500s)
+[dann] step 14000/18740 loss_y=0.0130 loss_d=0.6275 lr=0.00201 (503s)
+[dann] step 14200/18740 loss_y=0.0198 loss_d=0.5925 lr=0.00200 (527s)
+[dann] step 14400/18740 loss_y=0.0776 loss_d=0.6134 lr=0.00198 (529s)
+[dann] step 14600/18740 loss_y=0.0191 loss_d=0.6912 lr=0.00196 (532s)
+[dann] step 14800/18740 loss_y=0.0428 loss_d=0.5718 lr=0.00194 (534s)
+[dann] step 15000/18740 loss_y=0.0361 loss_d=0.6197 lr=0.00192 (560s)
+[dann] step 15200/18740 loss_y=0.0044 loss_d=0.6312 lr=0.00191 (563s)
+[dann] step 15400/18740 loss_y=0.0185 loss_d=0.6780 lr=0.00189 (565s)
+[dann] step 15600/18740 loss_y=0.0204 loss_d=0.5962 lr=0.00187 (568s)
+[dann] step 15800/18740 loss_y=0.0947 loss_d=0.6012 lr=0.00186 (570s)
+[dann] step 16000/18740 loss_y=0.0019 loss_d=0.6221 lr=0.00184 (598s)
+[dann] step 16200/18740 loss_y=0.0043 loss_d=0.6107 lr=0.00183 (600s)
+[dann] step 16400/18740 loss_y=0.1142 loss_d=0.6227 lr=0.00181 (603s)
+[dann] step 16600/18740 loss_y=0.1009 loss_d=0.6054 lr=0.00180 (605s)
+[dann] step 16800/18740 loss_y=0.0322 loss_d=0.6490 lr=0.00178 (607s)
+[dann] step 17000/18740 loss_y=0.0360 loss_d=0.6115 lr=0.00177 (634s)
+[dann] step 17200/18740 loss_y=0.0047 loss_d=0.5218 lr=0.00175 (636s)
+[dann] step 17400/18740 loss_y=0.0822 loss_d=0.5305 lr=0.00174 (639s)
+[dann] step 17600/18740 loss_y=0.0038 loss_d=0.6320 lr=0.00173 (642s)
+[dann] step 17800/18740 loss_y=0.0118 loss_d=0.5619 lr=0.00171 (644s)
+[dann] step 18000/18740 loss_y=0.0173 loss_d=0.5807 lr=0.00170 (674s)
+[dann] step 18200/18740 loss_y=0.0119 loss_d=0.5924 lr=0.00169 (676s)
+[dann] step 18400/18740 loss_y=0.0132 loss_d=0.5722 lr=0.00168 (678s)
+[dann] step 18600/18740 loss_y=0.0191 loss_d=0.6419 lr=0.00166 (680s)
+[dann] step 18740/18740 loss_y=0.0432 loss_d=0.5498 lr=0.00166 (682s)
+{
+  "method": "dann",
+  "source": "mnist",
+  "target": "mnist_m_gen",
+  "seed": 44,
+  "epochs": 20,
+  "steps": 18740,
+  "norm": "half",
+  "norm_mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "clip_grad": null,
+  "source_test_acc": 0.9862,
+  "target_test_acc": 0.7742,
+  "train_seconds": 496.3,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "b9123a4"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "step": 937,
+      "source_test_acc": 0.9787,
+      "domain_acc": 0.943,
+      "target_test_acc": 0.5676
+    },
+    {
+      "epoch": 2,
+      "step": 1874,
+      "source_test_acc": 0.9854,
+      "domain_acc": 0.93995,
+      "target_test_acc": 0.5975
+    },
+    {
+      "epoch": 3,
+      "step": 2811,
+      "source_test_acc": 0.972,
+      "domain_acc": 0.82375,
+      "target_test_acc": 0.5997
+    },
+    {
+      "epoch": 4,
+      "step": 3748,
+      "source_test_acc": 0.9776,
+      "domain_acc": 0.74685,
+      "target_test_acc": 0.632
+    },
+    {
+      "epoch": 5,
+      "step": 4685,
+      "source_test_acc": 0.9717,
+      "domain_acc": 0.81365,
+      "target_test_acc": 0.6206
+    },
+    {
+      "epoch": 6,
+      "step": 5622,
+      "source_test_acc": 0.9745,
+      "domain_acc": 0.6717,
+      "target_test_acc": 0.6876
+    },
+    {
+      "epoch": 7,
+      "step": 6559,
+      "source_test_acc": 0.9803,
+      "domain_acc": 0.57125,
+      "target_test_acc": 0.686
+    },
+    {
+      "epoch": 8,
+      "step": 7496,
+      "source_test_acc": 0.9824,
+      "domain_acc": 0.6548,
+      "target_test_acc": 0.7027
+    },
+    {
+      "epoch": 9,
+      "step": 8433,
+      "source_test_acc": 0.9864,
+      "domain_acc": 0.55025,
+      "target_test_acc": 0.7165
+    },
+    {
+      "epoch": 10,
+      "step": 9370,
+      "source_test_acc": 0.9875,
+      "domain_acc": 0.6616,
+      "target_test_acc": 0.7414
+    },
+    {
+      "epoch": 11,
+      "step": 10307,
+      "source_test_acc": 0.9853,
+      "domain_acc": 0.61635,
+      "target_test_acc": 0.7687
+    },
+    {
+      "epoch": 12,
+      "step": 11244,
+      "source_test_acc": 0.9862,
+      "domain_acc": 0.6338,
+      "target_test_acc": 0.776
+    },
+    {
+      "epoch": 13,
+      "step": 12181,
+      "source_test_acc": 0.9861,
+      "domain_acc": 0.64765,
+      "target_test_acc": 0.7796
+    },
+    {
+      "epoch": 14,
+      "step": 13118,
+      "source_test_acc": 0.9884,
+      "domain_acc": 0.6399,
+      "target_test_acc": 0.7812
+    },
+    {
+      "epoch": 15,
+      "step": 14055,
+      "source_test_acc": 0.986,
+      "domain_acc": 0.65555,
+      "target_test_acc": 0.78
+    },
+    {
+      "epoch": 16,
+      "step": 14992,
+      "source_test_acc": 0.9861,
+      "domain_acc": 0.6691,
+      "target_test_acc": 0.7772
+    },
+    {
+      "epoch": 17,
+      "step": 15929,
+      "source_test_acc": 0.9874,
+      "domain_acc": 0.66775,
+      "target_test_acc": 0.7912
+    },
+    {
+      "epoch": 18,
+      "step": 16866,
+      "source_test_acc": 0.9863,
+      "domain_acc": 0.68255,
+      "target_test_acc": 0.7916
+    },
+    {
+      "epoch": 19,
+      "step": 17803,
+      "source_test_acc": 0.988,
+      "domain_acc": 0.6813,
+      "target_test_acc": 0.7901
+    },
+    {
+      "epoch": 20,
+      "step": 18740,
+      "source_test_acc": 0.9862,
+      "domain_acc": 0.67655,
+      "target_test_acc": 0.7742
+    }
+  ],
+  "selected": {
+    "epoch": 9,
+    "rule": "source_acc >= best - 0.01; max domain error",
+    "source_test_acc": 0.9864,
+    "domain_acc": 0.55025,
+    "target_test_acc": 0.7165
+  }
+}

@@ -1,0 +1,74 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[baseline] step 200/9360 loss_y=0.3106 loss_d=0.0000 lr=0.00865 (14s)
+[baseline] step 400/9360 loss_y=0.1541 loss_d=0.0000 lr=0.00766 (17s)
+[baseline] step 600/9360 loss_y=0.1441 loss_d=0.0000 lr=0.00690 (31s)
+[baseline] step 800/9360 loss_y=0.0518 loss_d=0.0000 lr=0.00629 (34s)
+[baseline] step 1000/9360 loss_y=0.0606 loss_d=0.0000 lr=0.00580 (49s)
+[baseline] step 1200/9360 loss_y=0.0088 loss_d=0.0000 lr=0.00539 (52s)
+[baseline] step 1400/9360 loss_y=0.0747 loss_d=0.0000 lr=0.00504 (54s)
+[baseline] step 1600/9360 loss_y=0.0675 loss_d=0.0000 lr=0.00474 (68s)
+[baseline] step 1800/9360 loss_y=0.0089 loss_d=0.0000 lr=0.00447 (71s)
+[baseline] step 2000/9360 loss_y=0.0367 loss_d=0.0000 lr=0.00424 (89s)
+[baseline] step 2200/9360 loss_y=0.0252 loss_d=0.0000 lr=0.00404 (92s)
+[baseline] step 2400/9360 loss_y=0.0149 loss_d=0.0000 lr=0.00386 (107s)
+[baseline] step 2600/9360 loss_y=0.0547 loss_d=0.0000 lr=0.00369 (110s)
+[baseline] step 2800/9360 loss_y=0.0203 loss_d=0.0000 lr=0.00354 (113s)
+[baseline] step 3000/9360 loss_y=0.0414 loss_d=0.0000 lr=0.00341 (127s)
+[baseline] step 3200/9360 loss_y=0.0456 loss_d=0.0000 lr=0.00328 (129s)
+[baseline] step 3400/9360 loss_y=0.0198 loss_d=0.0000 lr=0.00317 (142s)
+[baseline] step 3600/9360 loss_y=0.0065 loss_d=0.0000 lr=0.00306 (145s)
+[baseline] step 3800/9360 loss_y=0.0497 loss_d=0.0000 lr=0.00296 (159s)
+[baseline] step 4000/9360 loss_y=0.0422 loss_d=0.0000 lr=0.00287 (161s)
+[baseline] step 4200/9360 loss_y=0.0113 loss_d=0.0000 lr=0.00279 (163s)
+[baseline] step 4400/9360 loss_y=0.0065 loss_d=0.0000 lr=0.00271 (176s)
+[baseline] step 4600/9360 loss_y=0.0223 loss_d=0.0000 lr=0.00264 (179s)
+[baseline] step 4800/9360 loss_y=0.0163 loss_d=0.0000 lr=0.00257 (193s)
+[baseline] step 5000/9360 loss_y=0.0197 loss_d=0.0000 lr=0.00250 (196s)
+[baseline] step 5200/9360 loss_y=0.0089 loss_d=0.0000 lr=0.00244 (209s)
+[baseline] step 5400/9360 loss_y=0.0167 loss_d=0.0000 lr=0.00238 (212s)
+[baseline] step 5600/9360 loss_y=0.0351 loss_d=0.0000 lr=0.00233 (215s)
+[baseline] step 5800/9360 loss_y=0.0133 loss_d=0.0000 lr=0.00228 (229s)
+[baseline] step 6000/9360 loss_y=0.0110 loss_d=0.0000 lr=0.00223 (231s)
+[baseline] step 6200/9360 loss_y=0.0099 loss_d=0.0000 lr=0.00218 (245s)
+[baseline] step 6400/9360 loss_y=0.0082 loss_d=0.0000 lr=0.00214 (247s)
+[baseline] step 6600/9360 loss_y=0.0017 loss_d=0.0000 lr=0.00209 (262s)
+[baseline] step 6800/9360 loss_y=0.0095 loss_d=0.0000 lr=0.00205 (265s)
+[baseline] step 7000/9360 loss_y=0.0344 loss_d=0.0000 lr=0.00201 (268s)
+[baseline] step 7200/9360 loss_y=0.0125 loss_d=0.0000 lr=0.00198 (281s)
+[baseline] step 7400/9360 loss_y=0.0125 loss_d=0.0000 lr=0.00194 (284s)
+[baseline] step 7600/9360 loss_y=0.0789 loss_d=0.0000 lr=0.00191 (298s)
+[baseline] step 7800/9360 loss_y=0.0311 loss_d=0.0000 lr=0.00187 (301s)
+[baseline] step 8000/9360 loss_y=0.0132 loss_d=0.0000 lr=0.00184 (314s)
+[baseline] step 8200/9360 loss_y=0.0154 loss_d=0.0000 lr=0.00181 (317s)
+[baseline] step 8400/9360 loss_y=0.1151 loss_d=0.0000 lr=0.00178 (320s)
+[baseline] step 8600/9360 loss_y=0.0332 loss_d=0.0000 lr=0.00175 (334s)
+[baseline] step 8800/9360 loss_y=0.0134 loss_d=0.0000 lr=0.00173 (337s)
+[baseline] step 9000/9360 loss_y=0.0284 loss_d=0.0000 lr=0.00170 (353s)
+[baseline] step 9200/9360 loss_y=0.0043 loss_d=0.0000 lr=0.00168 (355s)
+[baseline] step 9360/9360 loss_y=0.0011 loss_d=0.0000 lr=0.00166 (357s)
+{
+  "method": "baseline",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 42,
+  "epochs": 20,
+  "steps": 9360,
+  "norm": "mean",
+  "norm_mean": [
+    0.293035,
+    0.295113,
+    0.268403
+  ],
+  "source_test_acc": 0.9907,
+  "target_test_acc": 0.5297189201199867,
+  "train_seconds": 357.8,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "0c39ee8"
+  }
+}

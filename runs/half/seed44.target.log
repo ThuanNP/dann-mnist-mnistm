@@ -1,0 +1,196 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[target] step 200/9200 loss_y=2.3004 loss_d=0.0000 lr=0.00863 (19s)
+[target] step 400/9200 loss_y=1.6450 loss_d=0.0000 lr=0.00763 (23s)
+[target] step 600/9200 loss_y=0.7323 loss_d=0.0000 lr=0.00687 (46s)
+[target] step 800/9200 loss_y=0.4046 loss_d=0.0000 lr=0.00626 (50s)
+[target] step 1000/9200 loss_y=0.3009 loss_d=0.0000 lr=0.00576 (73s)
+[target] step 1200/9200 loss_y=0.1768 loss_d=0.0000 lr=0.00535 (77s)
+[target] step 1400/9200 loss_y=0.2927 loss_d=0.0000 lr=0.00500 (100s)
+[target] step 1600/9200 loss_y=0.1801 loss_d=0.0000 lr=0.00470 (104s)
+[target] step 1800/9200 loss_y=0.1128 loss_d=0.0000 lr=0.00444 (108s)
+[target] step 2000/9200 loss_y=0.2358 loss_d=0.0000 lr=0.00421 (132s)
+[target] step 2200/9200 loss_y=0.2603 loss_d=0.0000 lr=0.00400 (136s)
+[target] step 2400/9200 loss_y=0.1753 loss_d=0.0000 lr=0.00382 (160s)
+[target] step 2600/9200 loss_y=0.1618 loss_d=0.0000 lr=0.00366 (164s)
+[target] step 2800/9200 loss_y=0.1093 loss_d=0.0000 lr=0.00351 (188s)
+[target] step 3000/9200 loss_y=0.0612 loss_d=0.0000 lr=0.00337 (192s)
+[target] step 3200/9200 loss_y=0.2953 loss_d=0.0000 lr=0.00325 (197s)
+[target] step 3400/9200 loss_y=0.1561 loss_d=0.0000 lr=0.00314 (220s)
+[target] step 3600/9200 loss_y=0.1374 loss_d=0.0000 lr=0.00303 (223s)
+[target] step 3800/9200 loss_y=0.0938 loss_d=0.0000 lr=0.00293 (245s)
+[target] step 4000/9200 loss_y=0.1014 loss_d=0.0000 lr=0.00284 (248s)
+[target] step 4200/9200 loss_y=0.1145 loss_d=0.0000 lr=0.00276 (271s)
+[target] step 4400/9200 loss_y=0.1300 loss_d=0.0000 lr=0.00268 (275s)
+[target] step 4600/9200 loss_y=0.1397 loss_d=0.0000 lr=0.00261 (280s)
+[target] step 4800/9200 loss_y=0.1147 loss_d=0.0000 lr=0.00254 (304s)
+[target] step 5000/9200 loss_y=0.0793 loss_d=0.0000 lr=0.00248 (308s)
+[target] step 5200/9200 loss_y=0.0783 loss_d=0.0000 lr=0.00241 (329s)
+[target] step 5400/9200 loss_y=0.0823 loss_d=0.0000 lr=0.00236 (332s)
+[target] step 5600/9200 loss_y=0.2115 loss_d=0.0000 lr=0.00230 (353s)
+[target] step 5800/9200 loss_y=0.1186 loss_d=0.0000 lr=0.00225 (356s)
+[target] step 6000/9200 loss_y=0.0533 loss_d=0.0000 lr=0.00220 (380s)
+[target] step 6200/9200 loss_y=0.0886 loss_d=0.0000 lr=0.00216 (384s)
+[target] step 6400/9200 loss_y=0.0704 loss_d=0.0000 lr=0.00211 (387s)
+[target] step 6600/9200 loss_y=0.0743 loss_d=0.0000 lr=0.00207 (408s)
+[target] step 6800/9200 loss_y=0.0647 loss_d=0.0000 lr=0.00203 (411s)
+[target] step 7000/9200 loss_y=0.0422 loss_d=0.0000 lr=0.00199 (433s)
+[target] step 7200/9200 loss_y=0.1201 loss_d=0.0000 lr=0.00195 (436s)
+[target] step 7400/9200 loss_y=0.1136 loss_d=0.0000 lr=0.00192 (458s)
+[target] step 7600/9200 loss_y=0.0530 loss_d=0.0000 lr=0.00188 (461s)
+[target] step 7800/9200 loss_y=0.0580 loss_d=0.0000 lr=0.00185 (465s)
+[target] step 8000/9200 loss_y=0.1927 loss_d=0.0000 lr=0.00182 (486s)
+[target] step 8200/9200 loss_y=0.0931 loss_d=0.0000 lr=0.00179 (489s)
+[target] step 8400/9200 loss_y=0.0685 loss_d=0.0000 lr=0.00176 (510s)
+[target] step 8600/9200 loss_y=0.1052 loss_d=0.0000 lr=0.00173 (513s)
+[target] step 8800/9200 loss_y=0.0830 loss_d=0.0000 lr=0.00171 (537s)
+[target] step 9000/9200 loss_y=0.0941 loss_d=0.0000 lr=0.00168 (541s)
+[target] step 9200/9200 loss_y=0.0475 loss_d=0.0000 lr=0.00166 (546s)
+{
+  "method": "target",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 44,
+  "epochs": 20,
+  "steps": 9200,
+  "norm": "half",
+  "norm_mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "clip_grad": null,
+  "source_test_acc": 0.9757,
+  "target_test_acc": 0.955449394511721,
+  "train_seconds": 454.2,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "9a47c8b"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "step": 460,
+      "source_test_acc": 0.8132,
+      "target_test_acc": 0.6001555382735252
+    },
+    {
+      "epoch": 2,
+      "step": 920,
+      "source_test_acc": 0.9466,
+      "target_test_acc": 0.8889012331963115
+    },
+    {
+      "epoch": 3,
+      "step": 1380,
+      "source_test_acc": 0.9604,
+      "target_test_acc": 0.9242306410398845
+    },
+    {
+      "epoch": 4,
+      "step": 1840,
+      "source_test_acc": 0.9645,
+      "target_test_acc": 0.934007332518609
+    },
+    {
+      "epoch": 5,
+      "step": 2300,
+      "source_test_acc": 0.9687,
+      "target_test_acc": 0.9406732585268304
+    },
+    {
+      "epoch": 6,
+      "step": 2760,
+      "source_test_acc": 0.9687,
+      "target_test_acc": 0.9452283079657816
+    },
+    {
+      "epoch": 7,
+      "step": 3220,
+      "source_test_acc": 0.9706,
+      "target_test_acc": 0.9463392956338185
+    },
+    {
+      "epoch": 8,
+      "step": 3680,
+      "source_test_acc": 0.9672,
+      "target_test_acc": 0.9471169870014443
+    },
+    {
+      "epoch": 9,
+      "step": 4140,
+      "source_test_acc": 0.9744,
+      "target_test_acc": 0.9512276413731807
+    },
+    {
+      "epoch": 10,
+      "step": 4600,
+      "source_test_acc": 0.9729,
+      "target_test_acc": 0.950783246305966
+    },
+    {
+      "epoch": 11,
+      "step": 5060,
+      "source_test_acc": 0.9745,
+      "target_test_acc": 0.9516720364403956
+    },
+    {
+      "epoch": 12,
+      "step": 5520,
+      "source_test_acc": 0.9747,
+      "target_test_acc": 0.9524497278080213
+    },
+    {
+      "epoch": 13,
+      "step": 5980,
+      "source_test_acc": 0.9731,
+      "target_test_acc": 0.9531163204088434
+    },
+    {
+      "epoch": 14,
+      "step": 6440,
+      "source_test_acc": 0.9753,
+      "target_test_acc": 0.955782690812132
+    },
+    {
+      "epoch": 15,
+      "step": 6900,
+      "source_test_acc": 0.9752,
+      "target_test_acc": 0.955449394511721
+    },
+    {
+      "epoch": 16,
+      "step": 7360,
+      "source_test_acc": 0.9748,
+      "target_test_acc": 0.9531163204088434
+    },
+    {
+      "epoch": 17,
+      "step": 7820,
+      "source_test_acc": 0.976,
+      "target_test_acc": 0.9548939006777025
+    },
+    {
+      "epoch": 18,
+      "step": 8280,
+      "source_test_acc": 0.9743,
+      "target_test_acc": 0.9553382957449172
+    },
+    {
+      "epoch": 19,
+      "step": 8740,
+      "source_test_acc": 0.9749,
+      "target_test_acc": 0.9550049994445061
+    },
+    {
+      "epoch": 20,
+      "step": 9200,
+      "source_test_acc": 0.9757,
+      "target_test_acc": 0.955449394511721
+    }
+  ]
+}

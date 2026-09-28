@@ -1,0 +1,26 @@
+{
+  "method": "dann",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 42,
+  "epochs": 20,
+  "steps": 18740,
+  "norm": "mean",
+  "norm_mean": [
+    0.293035,
+    0.295113,
+    0.268403
+  ],
+  "source_test_acc": 0.981,
+  "target_test_acc": 0.6859237862459727,
+  "train_seconds": 562.2,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "0c39ee8"
+  }
+}

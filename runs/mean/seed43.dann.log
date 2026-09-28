@@ -1,0 +1,121 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[dann] step 200/18740 loss_y=0.2205 loss_d=0.1288 lr=0.00927 (13s)
+[dann] step 400/18740 loss_y=0.1193 loss_d=0.1248 lr=0.00865 (16s)
+[dann] step 600/18740 loss_y=0.0973 loss_d=0.2894 lr=0.00812 (18s)
+[dann] step 800/18740 loss_y=0.0320 loss_d=0.2344 lr=0.00766 (20s)
+[dann] step 1000/18740 loss_y=0.0384 loss_d=0.2078 lr=0.00726 (42s)
+[dann] step 1200/18740 loss_y=0.0521 loss_d=0.0906 lr=0.00690 (44s)
+[dann] step 1400/18740 loss_y=0.1408 loss_d=0.1309 lr=0.00658 (46s)
+[dann] step 1600/18740 loss_y=0.0489 loss_d=0.1668 lr=0.00630 (48s)
+[dann] step 1800/18740 loss_y=0.0221 loss_d=0.2218 lr=0.00604 (51s)
+[dann] step 2000/18740 loss_y=0.1094 loss_d=0.0993 lr=0.00580 (72s)
+[dann] step 2200/18740 loss_y=0.0119 loss_d=0.1030 lr=0.00559 (74s)
+[dann] step 2400/18740 loss_y=0.0091 loss_d=0.1356 lr=0.00539 (76s)
+[dann] step 2600/18740 loss_y=0.2435 loss_d=0.1259 lr=0.00521 (78s)
+[dann] step 2800/18740 loss_y=0.0159 loss_d=0.1595 lr=0.00504 (88s)
+[dann] step 3000/18740 loss_y=0.0886 loss_d=0.1575 lr=0.00488 (103s)
+[dann] step 3200/18740 loss_y=0.1084 loss_d=0.2116 lr=0.00474 (105s)
+[dann] step 3400/18740 loss_y=0.1220 loss_d=0.1841 lr=0.00460 (107s)
+[dann] step 3600/18740 loss_y=0.1441 loss_d=0.2998 lr=0.00448 (110s)
+[dann] step 3800/18740 loss_y=0.0955 loss_d=0.3126 lr=0.00436 (132s)
+[dann] step 4000/18740 loss_y=0.0584 loss_d=0.3903 lr=0.00425 (134s)
+[dann] step 4200/18740 loss_y=0.0546 loss_d=0.2563 lr=0.00414 (137s)
+[dann] step 4400/18740 loss_y=0.1244 loss_d=0.2004 lr=0.00404 (139s)
+[dann] step 4600/18740 loss_y=0.0904 loss_d=0.1726 lr=0.00395 (141s)
+[dann] step 4800/18740 loss_y=0.0365 loss_d=0.2256 lr=0.00386 (163s)
+[dann] step 5000/18740 loss_y=2.3010 loss_d=0.7610 lr=0.00377 (165s)
+[dann] step 5200/18740 loss_y=2.2993 loss_d=0.7165 lr=0.00369 (168s)
+[dann] step 5400/18740 loss_y=2.2954 loss_d=0.4380 lr=0.00362 (170s)
+[dann] step 5600/18740 loss_y=2.2991 loss_d=0.7257 lr=0.00354 (172s)
+[dann] step 5800/18740 loss_y=2.2919 loss_d=0.8822 lr=0.00347 (194s)
+[dann] step 6000/18740 loss_y=2.3043 loss_d=0.6948 lr=0.00341 (196s)
+[dann] step 6200/18740 loss_y=2.3071 loss_d=0.5397 lr=0.00334 (198s)
+[dann] step 6400/18740 loss_y=2.3012 loss_d=0.7143 lr=0.00328 (200s)
+[dann] step 6600/18740 loss_y=2.2882 loss_d=0.6951 lr=0.00323 (222s)
+[dann] step 6800/18740 loss_y=2.3028 loss_d=0.6780 lr=0.00317 (224s)
+[dann] step 7000/18740 loss_y=2.3041 loss_d=0.6932 lr=0.00312 (227s)
+[dann] step 7200/18740 loss_y=2.2893 loss_d=0.6932 lr=0.00306 (229s)
+[dann] step 7400/18740 loss_y=2.3068 loss_d=0.6931 lr=0.00301 (232s)
+[dann] step 7600/18740 loss_y=2.3008 loss_d=0.6931 lr=0.00297 (253s)
+[dann] step 7800/18740 loss_y=2.3050 loss_d=0.6923 lr=0.00292 (256s)
+[dann] step 8000/18740 loss_y=2.3158 loss_d=0.7006 lr=0.00288 (258s)
+[dann] step 8200/18740 loss_y=2.3036 loss_d=0.6935 lr=0.00283 (260s)
+[dann] step 8400/18740 loss_y=2.3115 loss_d=0.5241 lr=0.00279 (262s)
+[dann] step 8600/18740 loss_y=2.2944 loss_d=0.6927 lr=0.00275 (283s)
+[dann] step 8800/18740 loss_y=2.2890 loss_d=0.5334 lr=0.00271 (286s)
+[dann] step 9000/18740 loss_y=2.2906 loss_d=0.7172 lr=0.00267 (288s)
+[dann] step 9200/18740 loss_y=2.3050 loss_d=0.6960 lr=0.00264 (290s)
+[dann] step 9400/18740 loss_y=2.3065 loss_d=0.6933 lr=0.00260 (311s)
+[dann] step 9600/18740 loss_y=2.3017 loss_d=0.5754 lr=0.00257 (314s)
+[dann] step 9800/18740 loss_y=2.3051 loss_d=0.7035 lr=0.00254 (316s)
+[dann] step 10000/18740 loss_y=2.3034 loss_d=0.6939 lr=0.00250 (318s)
+[dann] step 10200/18740 loss_y=2.3021 loss_d=0.6932 lr=0.00247 (320s)
+[dann] step 10400/18740 loss_y=2.2914 loss_d=0.6932 lr=0.00244 (340s)
+[dann] step 10600/18740 loss_y=2.2978 loss_d=0.6931 lr=0.00241 (343s)
+[dann] step 10800/18740 loss_y=2.3011 loss_d=0.6931 lr=0.00238 (345s)
+[dann] step 11000/18740 loss_y=2.3063 loss_d=0.6931 lr=0.00236 (347s)
+[dann] step 11200/18740 loss_y=2.2994 loss_d=0.6931 lr=0.00233 (349s)
+[dann] step 11400/18740 loss_y=2.2947 loss_d=0.6933 lr=0.00230 (371s)
+[dann] step 11600/18740 loss_y=2.3026 loss_d=0.6862 lr=0.00228 (373s)
+[dann] step 11800/18740 loss_y=2.3058 loss_d=0.6199 lr=0.00225 (375s)
+[dann] step 12000/18740 loss_y=2.3080 loss_d=0.5739 lr=0.00223 (378s)
+[dann] step 12200/18740 loss_y=2.3003 loss_d=0.6321 lr=0.00220 (398s)
+[dann] step 12400/18740 loss_y=2.2974 loss_d=0.6964 lr=0.00218 (400s)
+[dann] step 12600/18740 loss_y=2.3077 loss_d=0.5807 lr=0.00216 (402s)
+[dann] step 12800/18740 loss_y=2.3090 loss_d=0.6945 lr=0.00214 (405s)
+[dann] step 13000/18740 loss_y=2.2905 loss_d=0.6933 lr=0.00211 (407s)
+[dann] step 13200/18740 loss_y=2.3037 loss_d=0.6932 lr=0.00209 (427s)
+[dann] step 13400/18740 loss_y=2.3087 loss_d=0.6880 lr=0.00207 (429s)
+[dann] step 13600/18740 loss_y=2.2929 loss_d=0.6918 lr=0.00205 (432s)
+[dann] step 13800/18740 loss_y=2.2926 loss_d=0.6932 lr=0.00203 (434s)
+[dann] step 14000/18740 loss_y=2.2998 loss_d=0.6932 lr=0.00201 (436s)
+[dann] step 14200/18740 loss_y=2.3014 loss_d=0.6931 lr=0.00200 (457s)
+[dann] step 14400/18740 loss_y=2.3060 loss_d=0.6931 lr=0.00198 (459s)
+[dann] step 14600/18740 loss_y=2.3121 loss_d=0.6931 lr=0.00196 (461s)
+[dann] step 14800/18740 loss_y=2.2984 loss_d=0.6931 lr=0.00194 (463s)
+[dann] step 15000/18740 loss_y=2.2883 loss_d=0.6931 lr=0.00192 (485s)
+[dann] step 15200/18740 loss_y=2.3061 loss_d=0.6931 lr=0.00191 (487s)
+[dann] step 15400/18740 loss_y=2.2975 loss_d=0.6931 lr=0.00189 (490s)
+[dann] step 15600/18740 loss_y=2.3118 loss_d=0.6931 lr=0.00187 (492s)
+[dann] step 15800/18740 loss_y=2.2950 loss_d=0.6931 lr=0.00186 (494s)
+[dann] step 16000/18740 loss_y=2.3154 loss_d=0.6931 lr=0.00184 (515s)
+[dann] step 16200/18740 loss_y=2.2862 loss_d=0.6931 lr=0.00183 (517s)
+[dann] step 16400/18740 loss_y=2.3026 loss_d=0.6931 lr=0.00181 (519s)
+[dann] step 16600/18740 loss_y=2.2919 loss_d=0.6931 lr=0.00180 (521s)
+[dann] step 16800/18740 loss_y=2.3055 loss_d=0.6931 lr=0.00178 (524s)
+[dann] step 17000/18740 loss_y=2.2905 loss_d=0.6931 lr=0.00177 (545s)
+[dann] step 17200/18740 loss_y=2.2887 loss_d=0.6931 lr=0.00175 (547s)
+[dann] step 17400/18740 loss_y=2.3018 loss_d=0.6931 lr=0.00174 (549s)
+[dann] step 17600/18740 loss_y=2.3171 loss_d=0.6931 lr=0.00173 (552s)
+[dann] step 17800/18740 loss_y=2.2971 loss_d=0.6931 lr=0.00171 (561s)
+[dann] step 18000/18740 loss_y=2.2963 loss_d=0.6931 lr=0.00170 (574s)
+[dann] step 18200/18740 loss_y=2.2868 loss_d=0.6931 lr=0.00169 (576s)
+[dann] step 18400/18740 loss_y=2.3094 loss_d=0.6931 lr=0.00168 (578s)
+[dann] step 18600/18740 loss_y=2.2989 loss_d=0.6931 lr=0.00166 (579s)
+[dann] step 18740/18740 loss_y=2.2974 loss_d=0.6931 lr=0.00166 (587s)
+{
+  "method": "dann",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 43,
+  "epochs": 20,
+  "steps": 18740,
+  "norm": "mean",
+  "norm_mean": [
+    0.293035,
+    0.295113,
+    0.268403
+  ],
+  "source_test_acc": 0.1135,
+  "target_test_acc": 0.1128763470725475,
+  "train_seconds": 587.6,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "0c39ee8"
+  }
+}

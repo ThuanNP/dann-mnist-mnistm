@@ -1,0 +1,74 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[baseline] step 200/9360 loss_y=0.2909 loss_d=0.0000 lr=0.00865 (11s)
+[baseline] step 400/9360 loss_y=0.1012 loss_d=0.0000 lr=0.00766 (13s)
+[baseline] step 600/9360 loss_y=0.1030 loss_d=0.0000 lr=0.00690 (25s)
+[baseline] step 800/9360 loss_y=0.1511 loss_d=0.0000 lr=0.00629 (27s)
+[baseline] step 1000/9360 loss_y=0.0904 loss_d=0.0000 lr=0.00580 (39s)
+[baseline] step 1200/9360 loss_y=0.0869 loss_d=0.0000 lr=0.00539 (41s)
+[baseline] step 1400/9360 loss_y=0.0504 loss_d=0.0000 lr=0.00504 (43s)
+[baseline] step 1600/9360 loss_y=0.0421 loss_d=0.0000 lr=0.00474 (56s)
+[baseline] step 1800/9360 loss_y=0.0293 loss_d=0.0000 lr=0.00447 (58s)
+[baseline] step 2000/9360 loss_y=0.0679 loss_d=0.0000 lr=0.00424 (70s)
+[baseline] step 2200/9360 loss_y=0.0471 loss_d=0.0000 lr=0.00404 (72s)
+[baseline] step 2400/9360 loss_y=0.0551 loss_d=0.0000 lr=0.00386 (84s)
+[baseline] step 2600/9360 loss_y=0.0272 loss_d=0.0000 lr=0.00369 (86s)
+[baseline] step 2800/9360 loss_y=0.0568 loss_d=0.0000 lr=0.00354 (88s)
+[baseline] step 3000/9360 loss_y=0.0450 loss_d=0.0000 lr=0.00341 (100s)
+[baseline] step 3200/9360 loss_y=0.0918 loss_d=0.0000 lr=0.00328 (102s)
+[baseline] step 3400/9360 loss_y=0.0404 loss_d=0.0000 lr=0.00317 (115s)
+[baseline] step 3600/9360 loss_y=0.0318 loss_d=0.0000 lr=0.00306 (117s)
+[baseline] step 3800/9360 loss_y=0.0225 loss_d=0.0000 lr=0.00296 (130s)
+[baseline] step 4000/9360 loss_y=0.0139 loss_d=0.0000 lr=0.00287 (132s)
+[baseline] step 4200/9360 loss_y=0.0436 loss_d=0.0000 lr=0.00279 (134s)
+[baseline] step 4400/9360 loss_y=0.0201 loss_d=0.0000 lr=0.00271 (146s)
+[baseline] step 4600/9360 loss_y=0.0074 loss_d=0.0000 lr=0.00264 (148s)
+[baseline] step 4800/9360 loss_y=0.0045 loss_d=0.0000 lr=0.00257 (160s)
+[baseline] step 5000/9360 loss_y=0.0085 loss_d=0.0000 lr=0.00250 (163s)
+[baseline] step 5200/9360 loss_y=0.0151 loss_d=0.0000 lr=0.00244 (176s)
+[baseline] step 5400/9360 loss_y=0.0376 loss_d=0.0000 lr=0.00238 (178s)
+[baseline] step 5600/9360 loss_y=0.0071 loss_d=0.0000 lr=0.00233 (180s)
+[baseline] step 5800/9360 loss_y=0.0071 loss_d=0.0000 lr=0.00228 (193s)
+[baseline] step 6000/9360 loss_y=0.0078 loss_d=0.0000 lr=0.00223 (195s)
+[baseline] step 6200/9360 loss_y=0.0174 loss_d=0.0000 lr=0.00218 (207s)
+[baseline] step 6400/9360 loss_y=0.0410 loss_d=0.0000 lr=0.00214 (209s)
+[baseline] step 6600/9360 loss_y=0.0027 loss_d=0.0000 lr=0.00209 (221s)
+[baseline] step 6800/9360 loss_y=0.0169 loss_d=0.0000 lr=0.00205 (223s)
+[baseline] step 7000/9360 loss_y=0.0433 loss_d=0.0000 lr=0.00201 (226s)
+[baseline] step 7200/9360 loss_y=0.0057 loss_d=0.0000 lr=0.00198 (239s)
+[baseline] step 7400/9360 loss_y=0.0143 loss_d=0.0000 lr=0.00194 (241s)
+[baseline] step 7600/9360 loss_y=0.0144 loss_d=0.0000 lr=0.00191 (253s)
+[baseline] step 7800/9360 loss_y=0.0085 loss_d=0.0000 lr=0.00187 (255s)
+[baseline] step 8000/9360 loss_y=0.0047 loss_d=0.0000 lr=0.00184 (268s)
+[baseline] step 8200/9360 loss_y=0.0273 loss_d=0.0000 lr=0.00181 (270s)
+[baseline] step 8400/9360 loss_y=0.0168 loss_d=0.0000 lr=0.00178 (272s)
+[baseline] step 8600/9360 loss_y=0.0126 loss_d=0.0000 lr=0.00175 (284s)
+[baseline] step 8800/9360 loss_y=0.0060 loss_d=0.0000 lr=0.00173 (287s)
+[baseline] step 9000/9360 loss_y=0.0171 loss_d=0.0000 lr=0.00170 (300s)
+[baseline] step 9200/9360 loss_y=0.0152 loss_d=0.0000 lr=0.00168 (302s)
+[baseline] step 9360/9360 loss_y=0.0124 loss_d=0.0000 lr=0.00166 (304s)
+{
+  "method": "baseline",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 43,
+  "epochs": 20,
+  "steps": 9360,
+  "norm": "half",
+  "norm_mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "source_test_acc": 0.991,
+  "target_test_acc": 0.5796022664148428,
+  "train_seconds": 304.4,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "9a47c8b"
+  }
+}

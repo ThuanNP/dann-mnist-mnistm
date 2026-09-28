@@ -1,0 +1,74 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[baseline] step 200/9360 loss_y=0.2615 loss_d=0.0000 lr=0.00865 (12s)
+[baseline] step 400/9360 loss_y=0.1369 loss_d=0.0000 lr=0.00766 (14s)
+[baseline] step 600/9360 loss_y=0.0499 loss_d=0.0000 lr=0.00690 (27s)
+[baseline] step 800/9360 loss_y=0.2459 loss_d=0.0000 lr=0.00629 (30s)
+[baseline] step 1000/9360 loss_y=0.0475 loss_d=0.0000 lr=0.00580 (42s)
+[baseline] step 1200/9360 loss_y=0.0987 loss_d=0.0000 lr=0.00539 (44s)
+[baseline] step 1400/9360 loss_y=0.0638 loss_d=0.0000 lr=0.00504 (47s)
+[baseline] step 1600/9360 loss_y=0.0334 loss_d=0.0000 lr=0.00474 (60s)
+[baseline] step 1800/9360 loss_y=0.0681 loss_d=0.0000 lr=0.00447 (63s)
+[baseline] step 2000/9360 loss_y=0.0210 loss_d=0.0000 lr=0.00424 (76s)
+[baseline] step 2200/9360 loss_y=0.0187 loss_d=0.0000 lr=0.00404 (78s)
+[baseline] step 2400/9360 loss_y=0.0293 loss_d=0.0000 lr=0.00386 (91s)
+[baseline] step 2600/9360 loss_y=0.0987 loss_d=0.0000 lr=0.00369 (93s)
+[baseline] step 2800/9360 loss_y=0.0603 loss_d=0.0000 lr=0.00354 (95s)
+[baseline] step 3000/9360 loss_y=0.0549 loss_d=0.0000 lr=0.00341 (110s)
+[baseline] step 3200/9360 loss_y=0.0164 loss_d=0.0000 lr=0.00328 (112s)
+[baseline] step 3400/9360 loss_y=0.0221 loss_d=0.0000 lr=0.00317 (125s)
+[baseline] step 3600/9360 loss_y=0.0656 loss_d=0.0000 lr=0.00306 (127s)
+[baseline] step 3800/9360 loss_y=0.0034 loss_d=0.0000 lr=0.00296 (141s)
+[baseline] step 4000/9360 loss_y=0.0163 loss_d=0.0000 lr=0.00287 (144s)
+[baseline] step 4200/9360 loss_y=0.0159 loss_d=0.0000 lr=0.00279 (146s)
+[baseline] step 4400/9360 loss_y=0.0159 loss_d=0.0000 lr=0.00271 (160s)
+[baseline] step 4600/9360 loss_y=0.0301 loss_d=0.0000 lr=0.00264 (162s)
+[baseline] step 4800/9360 loss_y=0.0173 loss_d=0.0000 lr=0.00257 (176s)
+[baseline] step 5000/9360 loss_y=0.0039 loss_d=0.0000 lr=0.00250 (179s)
+[baseline] step 5200/9360 loss_y=0.0144 loss_d=0.0000 lr=0.00244 (192s)
+[baseline] step 5400/9360 loss_y=0.0051 loss_d=0.0000 lr=0.00238 (194s)
+[baseline] step 5600/9360 loss_y=0.1654 loss_d=0.0000 lr=0.00233 (196s)
+[baseline] step 5800/9360 loss_y=0.0124 loss_d=0.0000 lr=0.00228 (208s)
+[baseline] step 6000/9360 loss_y=0.0063 loss_d=0.0000 lr=0.00223 (210s)
+[baseline] step 6200/9360 loss_y=0.0060 loss_d=0.0000 lr=0.00218 (223s)
+[baseline] step 6400/9360 loss_y=0.0293 loss_d=0.0000 lr=0.00214 (225s)
+[baseline] step 6600/9360 loss_y=0.0277 loss_d=0.0000 lr=0.00209 (237s)
+[baseline] step 6800/9360 loss_y=0.0064 loss_d=0.0000 lr=0.00205 (239s)
+[baseline] step 7000/9360 loss_y=0.0136 loss_d=0.0000 lr=0.00201 (241s)
+[baseline] step 7200/9360 loss_y=0.0133 loss_d=0.0000 lr=0.00198 (254s)
+[baseline] step 7400/9360 loss_y=0.0164 loss_d=0.0000 lr=0.00194 (257s)
+[baseline] step 7600/9360 loss_y=0.0458 loss_d=0.0000 lr=0.00191 (270s)
+[baseline] step 7800/9360 loss_y=0.0075 loss_d=0.0000 lr=0.00187 (273s)
+[baseline] step 8000/9360 loss_y=0.0083 loss_d=0.0000 lr=0.00184 (285s)
+[baseline] step 8200/9360 loss_y=0.0302 loss_d=0.0000 lr=0.00181 (287s)
+[baseline] step 8400/9360 loss_y=0.0180 loss_d=0.0000 lr=0.00178 (289s)
+[baseline] step 8600/9360 loss_y=0.0114 loss_d=0.0000 lr=0.00175 (302s)
+[baseline] step 8800/9360 loss_y=0.0235 loss_d=0.0000 lr=0.00173 (304s)
+[baseline] step 9000/9360 loss_y=0.0455 loss_d=0.0000 lr=0.00170 (317s)
+[baseline] step 9200/9360 loss_y=0.0045 loss_d=0.0000 lr=0.00168 (319s)
+[baseline] step 9360/9360 loss_y=0.0218 loss_d=0.0000 lr=0.00166 (321s)
+{
+  "method": "baseline",
+  "source": "mnist",
+  "target": "mnist_m",
+  "seed": 44,
+  "epochs": 20,
+  "steps": 9360,
+  "norm": "mean",
+  "norm_mean": [
+    0.293035,
+    0.295113,
+    0.268403
+  ],
+  "source_test_acc": 0.9911,
+  "target_test_acc": 0.519942228641262,
+  "train_seconds": 321.9,
+  "environment": {
+    "python": "3.14.7",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "device": "NVIDIA RTX A4000 Laptop GPU",
+    "git_commit": "9a47c8b"
+  }
+}
