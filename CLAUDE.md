@@ -15,8 +15,8 @@ mã Zotero hay thông tin cá nhân vào đây; chạy `gitleaks git --pre-commi
 - Siêu tham số theo mục 4 và Phụ lục C của Ganin & Lempitsky (2015); chi tiết bài báo không nêu ghi ở README.
 - `data.preprocess` dùng chung cho huấn luyện và app; sửa tiền xử lý ở đó để hai phía không lệch nhau.
 - App chỉ nạp `checkpoints/*.pt`, không huấn luyện. Checkpoint và `.json` kết quả được commit.
-- Notebook `notebooks/dann_mnist_to_mnistm_colab.ipynb` tự chứa (không import `da_demo`); sửa thiết lập huấn luyện
-  thì sửa cả notebook.
+- Notebook `notebooks/dann_mnist_to_mnistm_colab.ipynb` tự chứa (không import `da_demo`) nhưng chép nguyên văn mã của
+  `src/da_demo` (MNIST-M, tiền xử lý, mô hình, seed, DataLoader, vòng huấn luyện); sửa `src/da_demo` thì sửa cả notebook.
 - Chỉ ghi số liệu đo được từ lần chạy thật; mốc trên MNIST-M (baseline / dann / target): bản ICML 2015
   0.5749 / 0.8149 / 0.9891, bản JMLR 2016 0.5225 / 0.7666 / 0.9596.
 - README, docstring, comment, notebook viết tiếng Việt; không tự tham chiếu, tự phủ định, tự biện minh.

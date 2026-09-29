@@ -15,7 +15,7 @@ lệch chuẩn mẫu trên 3 seed (42, 43, 44):
 
 DANN thu hẹp 61.5% (trừ 0.5) và 62.2% (trừ trung bình) khoảng cách giữa `baseline` và `target`, tính theo
 `(dann - baseline) / (target - baseline)` trên độ chính xác trung bình; bản 2015 thu hẹp 57.9%. Không lần
-huấn luyện nào sụp đổ. Kết quả từng lần chạy (có lịch sử theo epoch) ở `runs/gen-half` và `runs/gen-mean`;
+huấn luyện nào sụp đổ. Kết quả từng lần huấn luyện (có lịch sử theo epoch) ở `runs/gen-half` và `runs/gen-mean`;
 GPU NVIDIA RTX A4000 Laptop, torch 2.14.0+cu130.
 
 `checkpoints/` chứa ba mô hình seed 42, trừ 0.5: `baseline` 0.5309, `dann` 0.8266 (epoch cuối), `target`
@@ -80,9 +80,11 @@ lịch sử lưu trong checkpoint. Bảng đầu trang ghi thêm trung bình ba 
 
 [`notebooks/dann_mnist_to_mnistm_colab.ipynb`](notebooks/dann_mnist_to_mnistm_colab.ipynb) là bản báo cáo tự
 chứa: công thức của bài báo, dựng MNIST-M, mô tả dữ liệu, huấn luyện ba mô hình, bảng và hình kết quả (đường
-cong theo epoch, t-SNE, ma trận nhầm lẫn). Mở trên Colab, chọn GPU T4, *Run all*; không cần cài thêm. Phần
-huấn luyện nạp toàn bộ dữ liệu lên GPU thay cho `DataLoader`, nên số liệu gần với bảng trên nhưng không trùng
-từng lần chạy.
+cong theo epoch, t-SNE, ma trận nhầm lẫn). Mở trên Colab, chọn GPU T4, *Run all*; không cần cài thêm. Notebook
+không import `da_demo` mà chép mã từ `src/da_demo`: dựng MNIST-M, tiền xử lý, kiến trúc, cố định seed,
+`DataLoader`, vòng huấn luyện và quy tắc chọn epoch. Cùng seed, cùng GPU và cùng phiên bản torch, CUDA, cuDNN
+thì notebook cho cùng số liệu với `python -m da_demo.train` và ghi kết quả vào `runs/gen-<norm>/seed<seed>/`
+theo cùng định dạng; trên GPU T4 của Colab, số liệu có thể lệch nhỏ so với bảng trên.
 
 ## Môi trường tái lập
 
@@ -113,7 +115,7 @@ dann-mnist-mnistm/
 ```
 
 Trong `runs/`: `gen-half`, `gen-mean` là kết quả chính trên MNIST-M dựng lại; `half`, `mean` là cùng cấu hình
-trên bản Hugging Face (lần chạy seed 43 với `--norm mean` sụp đổ, accuracy MNIST-M 0.1129).
+trên bản Hugging Face (lần huấn luyện seed 43 với `--norm mean` sụp đổ, accuracy MNIST-M 0.1129).
 
 ## Giấy phép
 
