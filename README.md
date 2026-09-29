@@ -72,6 +72,10 @@ Mỗi lần huấn luyện lưu `checkpoints/<method>_mnist_to_mnist_m_gen.pt` (
 theo epoch, seed, số bước, thời gian huấn luyện, môi trường). Seed mặc định 42; đổi bằng `--seed`, đổi thư mục
 ra bằng `--out-dir`.
 
+Ứng dụng Streamlit có hai tab: "Thử dự đoán" so sánh mô hình cơ sở và DANN trên ảnh tải lên hoặc ảnh MNIST-M
+ngẫu nhiên; "Quá trình huấn luyện DANN" vẽ độ chính xác MNIST, MNIST-M, nhánh miền và hệ số λ_p theo epoch từ
+lịch sử lưu trong checkpoint. Bảng đầu trang ghi thêm trung bình ba seed đọc từ `runs/gen-half/`.
+
 ## Notebook Colab
 
 [`notebooks/dann_mnist_to_mnistm_colab.ipynb`](notebooks/dann_mnist_to_mnistm_colab.ipynb) là bản báo cáo tự
@@ -94,7 +98,7 @@ từng lần chạy.
 
 ```
 dann-mnist-mnistm/
-├── app.py                 # Streamlit: nạp trọng số, tải ảnh lên, so sánh dự đoán
+├── app.py                 # Streamlit: nạp trọng số, so sánh dự đoán, đường cong huấn luyện DANN
 ├── src/da_demo/
 │   ├── data.py            # MNIST (3 kênh), MNIST-M, tiền xử lý dùng chung
 │   ├── make_mnistm.py     # dựng MNIST-M theo bài báo
