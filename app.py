@@ -11,7 +11,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 import torch
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 
 from da_demo.data import HALF_MEAN, get_dataset, preprocess
 from da_demo.evaluate import summarize
@@ -51,11 +51,11 @@ def load_target_test():
 
 
 def seed_summary():
-    # Trung bình và độ lệch chuẩn mẫu qua các seed trong runs/gen-half
+    # Độ chính xác MNIST-M theo seed của từng phương pháp trong runs/gen-half
     rows = {}
     for f in sorted((ROOT / "runs" / "gen-half").glob("seed*/*.json")):
         m = json.loads(f.read_text(encoding="utf-8"))
-        rows.setdefault(m["method"], []).append(m["target_test_acc"])
+        rows.setdefault(m["method"], {})[m["seed"]] = m["target_test_acc"]
     return rows
 
 
@@ -80,18 +80,25 @@ if rows:
     st.subheader("Độ chính xác trên tập kiểm thử")
     df = pd.DataFrame(rows)
     df["method"] = df["method"].map(NAMES).fillna(df["method"])
+    acc = ["source_test_acc", "target_test_acc", "paper_target_acc"]
+    df[acc] = df[acc] * 100
+    pct = st.column_config.NumberColumn(format="%.2f%%")
     st.dataframe(df[["method", "source_test_acc", "target_test_acc", "paper_target_acc", "epochs", "seed"]]
                  .rename(columns={"method": "Mô hình", "source_test_acc": "MNIST",
                                   "target_test_acc": "MNIST-M", "paper_target_acc": "MNIST-M (ICML)",
                                   "epochs": "Epoch", "seed": "Seed"}),
+                 column_config={"MNIST": pct, "MNIST-M": pct, "MNIST-M (ICML)": pct},
                  hide_index=True)
     runs = seed_summary()
     if runs:
         n = max(len(v) for v in runs.values())
-        st.caption(f"Seed 42 là seed mặc định và có DANN cao nhất trong {n} seed. Trung bình ± độ lệch chuẩn mẫu "
-                   f"trên MNIST-M qua {n} seed: " + "; ".join(
-                       f"{NAMES.get(k, k)} {pd.Series(v).mean():.4f} ± {pd.Series(v).std():.4f}"
-                       for k, v in runs.items()) + ".")
+        seed = rows[0]["seed"]
+        note = f"Seed {seed} là seed mặc định"
+        if "dann" in runs and max(runs["dann"], key=runs["dann"].get) == seed:
+            note += f" và có DANN cao nhất trong {n} seed"
+        st.caption(note + f". Trung bình ± độ lệch chuẩn mẫu trên MNIST-M qua {n} seed: " + "; ".join(
+            f"{NAMES.get(k, k)} {pd.Series(v).mean():.2%} ± {pd.Series(v).std():.2%}"
+            for k, v in runs.items()) + ".")
 
 tab_pred, tab_hist = st.tabs(["Thử dự đoán", "Quá trình huấn luyện DANN"])
 
@@ -111,18 +118,24 @@ with tab_hist:
         st.info("Checkpoint DANN không có lịch sử huấn luyện.")
 
 with tab_pred:
-    src = st.radio("Nguồn ảnh", ["Tải ảnh lên", "Ảnh ngẫu nhiên từ MNIST-M test"], horizontal=True)
+    src = st.segmented_control("Nguồn ảnh", ["Tải ảnh lên", "Ảnh ngẫu nhiên từ MNIST-M test"],
+                               default="Tải ảnh lên", required=True, key="src")
     img, true_label = None, None
     if src == "Tải ảnh lên":
         up = st.file_uploader("Ảnh chữ số (PNG/JPG)", type=["png", "jpg", "jpeg"])
         if up:
-            img = Image.open(up)
+            try:
+                img = Image.open(up)
+                img.load()
+            except (UnidentifiedImageError, OSError):
+                img = None
+                st.error("Không đọc được tệp ảnh. Hãy chọn một ảnh PNG hoặc JPG khác.")
     else:
         ds = load_target_test()
         if ds is None:
             st.warning("Chưa có data/mnist_m_gen. Chạy: uv run python -m da_demo.make_mnistm")
         else:
-            if st.button("Lấy ảnh khác") or "idx" not in st.session_state:
+            if st.button("Lấy ảnh khác", icon=":material/shuffle:") or "idx" not in st.session_state:
                 st.session_state.idx = random.randrange(len(ds))
             img = Image.fromarray(ds.images[st.session_state.idx])
             true_label = ds.labels[st.session_state.idx]
