@@ -70,7 +70,8 @@ uv run streamlit run app.py
 
 Mỗi lần huấn luyện lưu `checkpoints/<method>_mnist_to_mnist_m_gen.pt` (trọng số) và `.json` (accuracy, lịch sử
 theo epoch, seed, số bước, thời gian huấn luyện, môi trường). Seed mặc định 42; đổi bằng `--seed`, đổi thư mục
-ra bằng `--out-dir`.
+ra bằng `--out-dir`. Chạy các lệnh trên với thư mục mặc định sẽ ghi đè trọng số seed 42 đã công bố trong
+`checkpoints/`; để giữ nguyên, thêm `--out-dir runs/<tên thư mục>`.
 
 Ứng dụng Streamlit có hai tab: "Thử dự đoán" so sánh mô hình cơ sở và DANN trên ảnh tải lên hoặc ảnh MNIST-M
 ngẫu nhiên; "Quá trình huấn luyện DANN" vẽ độ chính xác MNIST, MNIST-M, nhánh miền và hệ số λ_p theo epoch từ
