@@ -41,6 +41,11 @@ Chi tiết hai bản bài báo không nêu:
   và sai số bộ phân loại miền cao. Với DANN, `train.py` lưu thêm `*.selected.pt` là epoch có sai số bộ phân loại
   miền cao nhất trong các epoch có accuracy nguồn cách mức tốt nhất không quá 0.01; quy tắc không dùng nhãn đích.
 
+Khác với bài báo:
+
+- `loss_y` và `loss_d` lấy trung bình theo batch (64 và 128 ảnh), nên so với phương trình (10) của Ganin et al.
+  (2016), trọng số hiệu dụng của mất mát miền bằng một nửa, với cả bộ trích đặc trưng (qua GRL) và bộ phân loại miền.
+
 ## Dữ liệu
 
 - MNIST: `torchvision.datasets.MNIST`, tự tải về `data/`.
