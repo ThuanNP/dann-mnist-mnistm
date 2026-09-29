@@ -14,8 +14,8 @@ lệch chuẩn mẫu trên 3 seed (42, 43, 44):
 | `target` | MNIST-M có nhãn (cận trên) | 0.9891 | 0.9596 | 0.9726 ± 0.0003 | 0.9730 ± 0.0006 |
 
 DANN thu hẹp 61.5% (trừ 0.5) và 62.2% (trừ trung bình) khoảng cách giữa `baseline` và `target`, tính theo
-`(dann - baseline) / (target - baseline)` trên độ chính xác trung bình; bản 2015 thu hẹp 57.9%. Không lần
-huấn luyện nào sụp đổ. Kết quả từng lần huấn luyện (có lịch sử theo epoch) ở `runs/gen-half` và `runs/gen-mean`;
+`(dann - baseline) / (target - baseline)` trên độ chính xác trung bình; bản ICML (Ganin & Lempitsky, 2015) thu hẹp 57.9%.
+Không lần nào trong 18 lần huấn luyện trên MNIST-M dựng lại bị sụp đổ. Kết quả từng lần huấn luyện (có lịch sử theo epoch) ở `runs/gen-half` và `runs/gen-mean`;
 GPU NVIDIA RTX A4000 Laptop, torch 2.14.0+cu130.
 
 `checkpoints/` chứa ba mô hình seed 42, trừ 0.5: `baseline` 0.5309, `dann` 0.8266 (epoch cuối), `target`
@@ -45,6 +45,9 @@ Khác với bài báo:
 
 - `loss_y` và `loss_d` lấy trung bình theo batch (64 và 128 ảnh), nên so với phương trình (10) của Ganin et al.
   (2016), trọng số hiệu dụng của mất mát miền bằng một nửa, với cả bộ trích đặc trưng (qua GRL) và bộ phân loại miền.
+  Mã Caffe của tác giả ([ddtm/caffe](https://github.com/ddtm/caffe), nhánh `grl`) cũng lấy trung bình mất mát nhãn
+  trên 64 ảnh nguồn và mất mát miền trên cả batch 128 ảnh; kho đó chỉ có cấu hình Office (mất mát miền nhân thêm
+  `loss_weight: 0.1`), không có cấu hình công khai cho MNIST.
 
 ## Dữ liệu
 
@@ -89,7 +92,7 @@ chứa: công thức của bài báo, dựng MNIST-M, mô tả dữ liệu, hu�
 cong theo epoch, t-SNE, ma trận nhầm lẫn). Mở trên Colab, chọn GPU T4, *Run all*; không cần cài thêm. Notebook
 không import `da_demo` mà chép mã từ `src/da_demo`: dựng MNIST-M, tiền xử lý, kiến trúc, cố định seed,
 `DataLoader`, vòng huấn luyện và quy tắc chọn epoch. Cùng seed, cùng GPU và cùng phiên bản torch, CUDA, cuDNN
-thì notebook cho cùng số liệu với `python -m da_demo.train` và ghi kết quả vào `runs/gen-<norm>/seed<seed>/`
+thì notebook được kỳ vọng cho cùng số liệu với `python -m da_demo.train` và ghi kết quả vào `runs/gen-<norm>/seed<seed>/`
 theo cùng định dạng; trên GPU T4 của Colab, số liệu có thể lệch nhỏ so với bảng trên.
 
 ## Môi trường tái lập
@@ -101,6 +104,9 @@ theo cùng định dạng; trên GPU T4 của Colab, số liệu có thể lệc
   `cudnn.deterministic = True`, `cudnn.benchmark = False`.
 - Tệp `.json` ghi trường `environment`: phiên bản Python, hệ điều hành, `torch`, CUDA, cuDNN, tên GPU
   và commit git. Cùng seed nhưng khác GPU hoặc phiên bản CUDA, accuracy có thể lệch nhỏ.
+- Trường `git_commit` trong `runs/` ghi commit của lịch sử cục bộ trước khi kho được gộp thành commit đầu tiên
+  (`8752ee5`); `src/da_demo` không đổi từ commit đó. Chạy lại DANN seed 42 bằng mã hiện tại cho mất mát ở các
+  bước 200–1.200 trùng từng chữ số với `runs/gen-half/seed42.dann.log`.
 
 ## Cấu trúc
 
@@ -122,6 +128,8 @@ dann-mnist-mnistm/
 
 Trong `runs/`: `gen-half`, `gen-mean` là kết quả chính trên MNIST-M dựng lại; `half`, `mean` là cùng cấu hình
 trên bản Hugging Face (lần huấn luyện seed 43 với `--norm mean` sụp đổ, accuracy MNIST-M 0.1129).
+`half/seed42` (`baseline`, `dann`) chạy bằng phiên bản mã trước khi có tùy chọn `--norm`, nên tệp `.json` không
+ghi trường `norm` và không có log.
 
 ## Giấy phép
 
