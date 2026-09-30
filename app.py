@@ -66,6 +66,9 @@ def predict(model, mean, img: Image.Image):
 
 
 st.set_page_config(page_title="MNIST → MNIST-M: mô hình cơ sở và DANN", layout="wide")
+# Cỡ chữ gốc 17px (mặc định 16px) cho dễ đọc khi trình chiếu; giữ theme theo hệ thống.
+# Nút chọn nguồn ảnh cao bằng nút thường (2.5rem) để thẳng hàng với "Lấy ảnh khác".
+st.html("<style>html { font-size: 17px; } .st-key-src button { min-height: 2.5rem; }</style>")
 st.title("Thích ứng tên miền: MNIST → MNIST-M")
 st.caption("So sánh mô hình chỉ học trên miền nguồn với DANN "
            "(Ganin & Lempitsky, ICML 2015; bản arXiv 2014).")
@@ -119,8 +122,10 @@ with tab_hist:
         st.info("Checkpoint DANN không có lịch sử huấn luyện.")
 
 with tab_pred:
-    src = st.segmented_control("Nguồn ảnh", ["Tải ảnh lên", "Ảnh ngẫu nhiên từ MNIST-M test"],
-                               default="Tải ảnh lên", required=True, key="src")
+    # Nút chọn nguồn và nút "Lấy ảnh khác" chung một hàng; tự xuống dòng khi màn hình hẹp
+    row = st.container(horizontal=True, vertical_alignment="bottom")
+    src = row.segmented_control("Nguồn ảnh", ["Tải ảnh lên", "Ảnh ngẫu nhiên từ MNIST-M test"],
+                                default="Tải ảnh lên", required=True, key="src")
     img, true_label = None, None
     if src == "Tải ảnh lên":
         up = st.file_uploader("Ảnh chữ số (PNG/JPG)", type=["png", "jpg", "jpeg"])
@@ -136,21 +141,44 @@ with tab_pred:
         if ds is None:
             st.warning("Chưa có data/mnist_m_gen. Chạy: uv run python -m da_demo.make_mnistm")
         else:
-            if st.button("Lấy ảnh khác", icon=":material/shuffle:") or "idx" not in st.session_state:
+            if row.button("Lấy ảnh khác", icon=":material/shuffle:") or "idx" not in st.session_state:
                 st.session_state.idx = random.randrange(len(ds))
             img = Image.fromarray(ds.images[st.session_state.idx])
             true_label = ds.labels[st.session_state.idx]
 
     if img is not None:
-        cols = st.columns([1] + [2] * len(models))
-        cols[0].image(img.convert("RGB").resize((112, 112), Image.NEAREST),
-                      caption=f"Nhãn thật: {true_label}" if true_label is not None else None)
+        cols = st.columns([1.2] + [2] * len(models), gap="large")
+        with cols[0].container(border=True):
+            st.markdown("**Ảnh đầu vào**")
+            st.image(img.convert("RGB").resize((224, 224), Image.NEAREST), width=224)
+            if true_label is not None:
+                st.markdown(f"Nhãn thật: **{true_label}**")
         for col, (label, (m, mean)) in zip(cols[1:], models.items()):
             probs = predict(m, mean, img)
-            col.markdown(f"**{label}**")
-            col.metric("Dự đoán", int(probs.argmax()))
-            col.caption(f"Xác suất lớp dự đoán: {probs.max().item():.1%}")
-            # Nhãn trục x đặt đứng (labelAngle=0) cho dễ đọc
-            df_p = pd.DataFrame({"chữ số": [str(i) for i in range(10)], "xác suất": probs.numpy()})
-            col.altair_chart(alt.Chart(df_p).mark_bar().encode(
-                x=alt.X("chữ số:N", axis=alt.Axis(labelAngle=0)), y="xác suất:Q"))
+            pred = int(probs.argmax())
+            with col.container(border=True):
+                verdict = "" if true_label is None else (
+                    "<span style='color:#21c354;font-size:1.3rem;font-weight:600'>đúng</span>" if pred == true_label
+                    else "<span style='color:#ff4b4b;font-size:1.3rem;font-weight:600'>sai</span>")
+                # Lớp khác: xanh dương nhạt; lớp dự đoán khi chưa biết nhãn: xanh dương đậm; đúng: xanh lá; sai: đỏ
+                accent = "#1c6fd1" if true_label is None else ("#21c354" if pred == true_label else "#ff4b4b")
+                # Tên mô hình và kết quả dự đoán chung một hàng để biểu đồ có thêm chỗ
+                head = st.container(horizontal=True, horizontal_alignment="distribute", vertical_alignment="center")
+                head.markdown(f"**{label}**", width="content")
+                head.markdown(
+                    "<div style='display:flex;align-items:baseline;gap:1.1rem'>"
+                    "<span style='font-size:1.3rem;opacity:.75'>Dự đoán</span>"
+                    f"<span style='font-size:2.8rem;font-weight:700;line-height:1'>{pred}</span>"
+                    f"<span style='font-size:1.3rem'>{probs.max().item():.1%}</span>{verdict}</div>",
+                    unsafe_allow_html=True, width="content")
+                # Cột lớp dự đoán tô màu nhấn; nhãn trục x đặt đứng
+                df_p = pd.DataFrame({"chữ số": [str(i) for i in range(10)], "xác suất": probs.numpy(),
+                                     "dự đoán": [i == pred for i in range(10)]})
+                st.altair_chart(alt.Chart(df_p, height=320).mark_bar(cornerRadiusTopLeft=3,
+                                                                     cornerRadiusTopRight=3).encode(
+                    x=alt.X("chữ số:N", title="Chữ số",
+                            axis=alt.Axis(labelAngle=0, labelFontSize=15, titleFontSize=14)),
+                    y=alt.Y("xác suất:Q", title="Xác suất", scale=alt.Scale(domain=[0, 1]),
+                            axis=alt.Axis(format="%", labelFontSize=13, titleFontSize=14)),
+                    color=alt.condition("datum['dự đoán']", alt.value(accent), alt.value("#a8cdf0")),
+                    tooltip=["chữ số", alt.Tooltip("xác suất:Q", format=".1%")]))

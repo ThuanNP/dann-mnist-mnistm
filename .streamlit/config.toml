@@ -1,0 +1,6 @@
+# Màu chủ đạo xanh dương cho cả hai theme; màu đỏ chỉ dành cho báo lỗi và dự đoán sai
+[theme.light]
+primaryColor = "#1c83e1"
+
+[theme.dark]
+primaryColor = "#4c9be8"
