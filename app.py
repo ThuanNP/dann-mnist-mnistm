@@ -8,6 +8,7 @@ import json
 import random
 from pathlib import Path
 
+import altair as alt
 import pandas as pd
 import streamlit as st
 import torch
@@ -149,4 +150,7 @@ with tab_pred:
             col.markdown(f"**{label}**")
             col.metric("Dự đoán", int(probs.argmax()))
             col.caption(f"Xác suất lớp dự đoán: {probs.max().item():.1%}")
-            col.bar_chart(pd.DataFrame({"xác suất": probs.numpy()}, index=[str(i) for i in range(10)]))
+            # Nhãn trục x đặt đứng (labelAngle=0) cho dễ đọc
+            df_p = pd.DataFrame({"chữ số": [str(i) for i in range(10)], "xác suất": probs.numpy()})
+            col.altair_chart(alt.Chart(df_p).mark_bar().encode(
+                x=alt.X("chữ số:N", axis=alt.Axis(labelAngle=0)), y="xác suất:Q"))
