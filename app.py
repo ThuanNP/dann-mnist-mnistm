@@ -114,7 +114,7 @@ with tab_hist:
         h["lambda_p"] = [lambda_at(s / total) for s in h["step"]]
         h = h.set_index("epoch")
         st.markdown("Độ chính xác đo sau mỗi epoch (seed 42). Nhánh miền càng gần 0,5 thì hai miền càng khó phân biệt; "
-                    "hệ số thích ứng λ_p tăng từ 0 đến 1 theo công thức (3.7).")
+                    "hệ số thích ứng λ_p tăng dần từ 0 đến 1 theo tiến độ huấn luyện p.")
         st.line_chart(h[["source_test_acc", "target_test_acc", "domain_acc", "lambda_p"]].rename(columns={
             "source_test_acc": "MNIST (nguồn)", "target_test_acc": "MNIST-M (đích)",
             "domain_acc": "Nhánh miền", "lambda_p": "λ_p"}))
